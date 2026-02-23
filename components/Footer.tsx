@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1F2937] text-white py-16">
+    <footer className="bg-[#1F2937] text-white py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
-          {/* Copyright - Spans 1 column on large screens */}
-          <div className="lg:col-span-1 flex items-start">
-            <p className="font-body text-sm text-white/90 leading-relaxed">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 lg:gap-8">
+          {/* Copyright - Spans full width on mobile */}
+          <div className="sm:col-span-2 md:col-span-3 lg:col-span-1 flex items-start md:order-last">
+            <p className="font-body text-xs sm:text-sm text-white/90 leading-relaxed">
               Copyright © Tour Guide 2020 All rights reserved
             </p>
           </div>

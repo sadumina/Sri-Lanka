@@ -61,8 +61,8 @@ export default function Testimonial() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="mb-16">
-          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2C2C2C] uppercase mb-4">
+        <div className="mb-12 md:mb-16">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#2C2C2C] uppercase mb-4">
             Traveler's <span className="text-[#C9A227]">Experiences</span>
           </h2>
           <p className="font-body text-base text-gray-600 max-w-2xl">

@@ -19,10 +19,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="flex items-center justify-between">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-8">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0">
           {/* Text */}
-          <div className="max-w-xl">
+          <div className="max-w-xl w-full">
             {/* Eyebrow */}
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-px bg-[#C9A227]" />
@@ -32,7 +32,7 @@ export default function Hero() {
             </div>
 
             {/* Main Heading */}
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[0.95] uppercase mb-6">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[0.95] uppercase mb-6">
               Journeys
               <br />
               <span className="italic font-light text-[#C9A227]">to</span>

@@ -28,8 +28,8 @@ export default function WhySection() {
     <section id="wildlife" className="py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mb-16 lg:mb-20">
-          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0D1B2A] uppercase leading-tight mb-8">
+        <div className="mb-12 md:mb-16 lg:mb-20">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0D1B2A] uppercase leading-tight mb-6 md:mb-8">
             Why{" "}
             <span className="text-[#C9A227]">SriLanka</span>
           </h2>

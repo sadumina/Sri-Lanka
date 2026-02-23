@@ -39,10 +39,10 @@ export default function Packages() {
     <section id="packages" className="py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
           {/* Left: Heading */}
           <div>
-            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0D1B2A] uppercase leading-tight">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0D1B2A] uppercase leading-tight">
               Looking for{" "}
               <span className="text-[#C9A227]">Inspiration</span>
             </h2>
