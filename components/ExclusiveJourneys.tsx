@@ -5,12 +5,12 @@ export default function ExclusiveJourneys() {
   return (
     <section id="journeys" className="relative py-24 lg:py-32 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
       {/* Background Sri Lanka map outline */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/3 h-full opacity-[0.03] pointer-events-none">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[45%] h-[90%] opacity-[0.08] pointer-events-none">
         <Image
           src="/sri-lanka-outline.png"
           alt="Sri Lanka map outline"
           fill
-          sizes="33vw"
+          sizes="45vw"
           className="object-contain"
         />
       </div>

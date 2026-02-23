@@ -25,13 +25,26 @@ const whyCards = [
 
 export default function WhySection() {
   return (
-    <section id="wildlife" className="py-24 lg:py-32 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="why-sri-lanka" className="py-24 lg:py-32 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        {/* Corner stone image */}
+        <div className="pointer-events-none absolute left-0 top-0 w-[220px] sm:w-[280px] lg:w-[320px] opacity-60">
+          <div className="relative h-[140px] sm:h-[180px] lg:h-[200px]">
+            <Image
+              src="/pahana.png"
+              alt=""
+              fill
+              sizes="320px"
+              className="object-contain"
+              priority={false}
+            />
+          </div>
+        </div>
         {/* Section Header */}
         <div className="mb-12 md:mb-16 lg:mb-20">
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0D1B2A] uppercase leading-tight mb-6 md:mb-8">
-            Why{" "}
-            <span className="text-[#C9A227]">SriLanka</span>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0D1B2A] uppercase leading-tight mb-6 md:mb-8">
+            View{" "}
+            <span className="text-[#C9A227]">Sri Lanka</span>
           </h2>
           
           <div className="max-w-4xl space-y-4">
@@ -76,6 +89,37 @@ export default function WhySection() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Tea picker testimonial */}
+        <div className="mt-12 lg:mt-16 rounded-2xl overflow-hidden border border-gray-200 bg-[#F6F6F6]">
+          <div className="grid lg:grid-cols-[1.2fr_1fr]">
+            <div className="relative min-h-[260px] sm:min-h-[320px] lg:min-h-[360px]">
+              <Image
+                src="/testimonial-woman.jpg"
+                alt="Tea leaf picker in Sri Lanka"
+                fill
+                sizes="(max-width: 1024px) 100vw, 60vw"
+                className="object-cover"
+              />
+              <div className="absolute bottom-6 left-6 text-white">
+                <p className="font-body text-xs tracking-[0.2em] uppercase">Eliva Rollen</p>
+                <p className="font-body text-xs tracking-[0.2em] uppercase text-white/80">Italy</p>
+              </div>
+            </div>
+            <div className="p-8 sm:p-10 lg:p-12 flex flex-col justify-center">
+              <div className="text-[#C9A227] text-5xl leading-none">“</div>
+              <h3 className="font-display text-2xl sm:text-3xl font-extrabold text-[#0D1B2A] uppercase leading-tight mt-2">
+                From stunning beaches to luxury escapes and unforgettable adventures, Sri Lanka exceeded every expectation.
+              </h3>
+              <p className="font-body text-sm text-gray-600 mt-4">
+                Eliva Rollen, Italy
+              </p>
+              <p className="font-body text-xs text-gray-500">
+                International Travel Consultant | Luxury Travel Specialist
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -4,11 +4,10 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "Destinations", href: "#destinations" },
-  { label: "Journeys", href: "#journeys" },
-  { label: "Wildlife", href: "#wildlife" },
-  { label: "About", href: "#about" },
-  { label: "Journal", href: "#journal" },
+  { label: "Home", href: "#top" },
+  { label: "Why Sri Lanka", href: "#why-sri-lanka" },
+  { label: "Culture", href: "#packages" },
+  // { label: "Contact Us", href: "#newsletter" },
 ];
 
 export default function Navbar() {
@@ -60,10 +59,10 @@ export default function Navbar() {
           {/* CTA + Mobile Menu */}
           <div className="flex items-center gap-4">
             <Link
-              href="#contact"
+              href="#newsletter"
               className="hidden sm:inline-flex items-center btn-gold text-[10px] py-3 px-6"
             >
-              Plan My Journey
+              Contact Us
             </Link>
 
             {/* Mobile hamburger */}
@@ -109,7 +108,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="#contact"
+              href="#newsletter"
               onClick={() => setMenuOpen(false)}
               className="btn-gold text-[10px] py-3 px-6 text-center mt-2"
             >

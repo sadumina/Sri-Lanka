@@ -14,7 +14,7 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="py-16 bg-[#F5F5F5]">
+    <section id="newsletter" className="py-16 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl shadow-lg px-6 sm:px-8 md:px-12 py-8 md:py-12">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -54,11 +54,11 @@ export default function Newsletter() {
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your email"
                       required
-                      className="flex-1 font-body text-sm sm:text-base text-gray-700 placeholder:text-[#C9A588] bg-[#F3F4F6] px-4 sm:px-6 py-3 sm:py-4 rounded-xl outline-none focus:ring-2 focus:ring-[#C9A227]/30 transition-all"
+                      className="flex-1 font-body text-sm sm:text-base text-gray-700 placeholder:text-[#C9A588] bg-[#F3F4F6] px-4 sm:px-6 py-3 rounded-md outline-none focus:ring-2 focus:ring-[#C9A227]/30 transition-all"
                     />
-                    <button 
-                      type="submit" 
-                      className="font-body font-semibold text-sm sm:text-base text-white bg-[#C9A227] hover:bg-[#A8841A] px-6 sm:px-10 py-3 sm:py-4 rounded-xl transition-all duration-300 whitespace-nowrap"
+                    <button
+                      type="submit"
+                      className="btn-gold whitespace-nowrap"
                     >
                       Submit
                     </button>

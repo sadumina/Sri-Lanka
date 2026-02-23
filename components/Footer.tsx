@@ -22,23 +22,23 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#journeys" className="font-body text-base text-white/80 hover:text-[#C9A227] transition-colors">
-                  Explore
-                </Link>
-              </li>
-              <li>
-                <Link href="#about" className="font-body text-base text-white/80 hover:text-[#C9A227] transition-colors">
-                  Travel
+                <Link href="#why-sri-lanka" className="font-body text-base text-white/80 hover:text-[#C9A227] transition-colors">
+                  Why Sri Lanka
                 </Link>
               </li>
               <li>
                 <Link href="#packages" className="font-body text-base text-white/80 hover:text-[#C9A227] transition-colors">
-                  Blog
+                  Culture
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="font-body text-base text-white/80 hover:text-[#C9A227] transition-colors">
-                  Pricing
+                <Link href="#journeys" className="font-body text-base text-white/80 hover:text-[#C9A227] transition-colors">
+                  Journeys
+                </Link>
+              </li>
+              <li>
+                <Link href="#experiences" className="font-body text-base text-white/80 hover:text-[#C9A227] transition-colors">
+                  Experiences
                 </Link>
               </li>
             </ul>
@@ -54,18 +54,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#support" className="font-body text-base text-white/80 hover:text-[#C9A227] transition-colors">
-                  Supports
+                <Link href="#why-choose" className="font-body text-base text-white/80 hover:text-[#C9A227] transition-colors">
+                  Why Choose
                 </Link>
               </li>
               <li>
-                <Link href="#terms" className="font-body text-base text-white/80 hover:text-[#C9A227] transition-colors">
-                  Terms & Conditions
-                </Link>
-              </li>
-              <li>
-                <Link href="#privacy" className="font-body text-base text-white/80 hover:text-[#C9A227] transition-colors">
-                  Privacy
+                <Link href="#newsletter" className="font-body text-base text-white/80 hover:text-[#C9A227] transition-colors">
+                  Newsletter
                 </Link>
               </li>
             </ul>
