@@ -1,26 +1,118 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Jost', system-ui, sans-serif;
+  --gold: #C9A227;
+  --gold-light: #E2B93B;
+  --gold-dark: #A8841A;
+  --navy: #0D1B2A;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  color: #2C2C2C;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer utilities {
+  .text-gold {
+    color: var(--gold);
+  }
+
+  .bg-gold {
+    background-color: var(--gold);
+  }
+
+  .border-gold {
+    border-color: var(--gold);
+  }
+
+  .gold-underline {
+    position: relative;
+  }
+
+  .gold-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+  }
+
+  .gold-underline-center::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply bg-[#C9A227] text-white font-semibold tracking-widest uppercase text-xs px-8 py-4 rounded-none transition-all duration-300 hover:bg-[#A8841A] hover:shadow-[0_8px_30px_rgba(201,162,39,0.4)] active:scale-95;
+  }
+
+  .btn-outline-white {
+    @apply border border-white text-white font-semibold tracking-widest uppercase text-xs px-8 py-4 rounded-none transition-all duration-300 hover:bg-white hover:text-[#0D1B2A] active:scale-95;
+  }
+
+  .card-luxury {
+    @apply rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.15)] transition-all duration-500 hover:shadow-[0_30px_80px_rgba(0,0,0,0.25)] hover:-translate-y-1;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 3px;
+}
+
+/* Smooth image transitions */
+img {
+  transition: transform 0.6s ease;
+}
+
+/* Number counters */
+.step-number {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--gold);
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
