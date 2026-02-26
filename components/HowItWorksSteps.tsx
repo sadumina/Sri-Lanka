@@ -47,13 +47,13 @@ export default function HowItWorksSteps() {
       />
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0D1B2A]/95 via-[#0D1B2A]/80 to-[#0D1B2A]/70" />
+      <div className="absolute inset-0 bg-linear-to-t from-navy/90 via-navy/75 to-navy/55" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Box */}
-        <div className="bg-white/95 backdrop-blur-sm rounded-2xl px-8 py-10 sm:px-12 sm:py-14 max-w-2xl mb-16 shadow-2xl">
-          <h2 className="font-display text-4xl sm:text-5xl font-bold text-[#0D1B2A] uppercase leading-tight mb-4">
-            How it <span className="text-[#C9A227]">Works</span>
+        <div className="bg-white rounded-2xl px-8 py-10 sm:px-12 sm:py-14 max-w-2xl mb-16 shadow-xl">
+          <h2 className="font-display text-4xl sm:text-5xl font-bold text-navy uppercase leading-tight mb-4">
+            How it <span className="text-gold">Works</span>
           </h2>
           <p className="font-body text-base text-gray-600 leading-relaxed">
             We believe meaningful travel begins with genuine connections. We take the time to 
@@ -67,7 +67,7 @@ export default function HowItWorksSteps() {
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               {/* Icon Circle */}
-              <div className="w-24 h-24 rounded-full bg-[#C9A227] flex items-center justify-center mb-6 shadow-[0_10px_40px_rgba(201,162,39,0.4)] text-white">
+              <div className="w-24 h-24 rounded-full bg-gold flex items-center justify-center mb-6 shadow-[0_10px_40px_rgba(201,162,39,0.4)] text-white">
                 {step.icon}
               </div>
 

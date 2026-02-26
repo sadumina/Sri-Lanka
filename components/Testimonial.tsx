@@ -49,17 +49,18 @@ export default function Testimonial() {
 
   return (
     <section id="experiences" className="py-24 lg:py-32 bg-white relative overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none">
-        <Image
-          src="/sri-lanka-outline.png"
-          alt=""
+      {/* Pahana image fitted and rotated in right corner */}
+      <div className="hidden lg:block absolute top-0 right-0 h-[420px] w-[420px] z-0" style={{ transform: "rotate(45deg)" }}>
+        {/* <Image
+          src="/pahana.png"
+          alt="Stone decorative"
           fill
-          className="object-contain object-right"
-        />
+          sizes="420px"
+          className="object-cover object-right"
+        /> */}
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12 md:mb-16">
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#2C2C2C] uppercase mb-4">

@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,12 +26,10 @@ export default function Hero() {
               Welcome to The Ceylon Tour Guide
             </p>
             {/* Main Heading */}
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-white leading-[0.95] uppercase mb-6 tracking-[0.02em]">
-              JOURNEYS
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-white leading-[0.95] uppercase mb-6 tracking-[0.02em]">
+              <span className="whitespace-nowrap">JOURNEYS TO</span>
               <br />
-              <span className="text-[#C9A227]">TO</span>
-              <br />
-              <span className="text-white">SRI LANKA</span>
+              <span className="text-[#C9A227]">SRI LANKA</span>
             </h1>
 
             {/* Subheading */}
@@ -50,12 +49,12 @@ export default function Hero() {
           </div>
 
           {/* Sri Lanka Map */}
-          <div className="hidden lg:block relative w-[280px] xl:w-[320px] h-[360px]">
+          <div className="hidden lg:block relative w-[400px] xl:w-[480px] h-[520px]">
             <Image
               src="/sri-lanka-map.png"
               alt="Sri Lanka map outline"
               fill
-              sizes="320px"
+              sizes="480px"
               className="object-contain opacity-90"
             />
           </div>

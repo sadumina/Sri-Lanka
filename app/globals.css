@@ -1,8 +1,40 @@
 @import "tailwindcss";
 
+@theme {
+  /* Colors */
+  --color-gold: #C9A227;
+  --color-gold-light: #E2B93B;
+  --color-gold-dark: #A8841A;
+  --color-navy: #0D1B2A;
+  --color-navy-light: #132236;
+  --color-navy-mid: #1A2F47;
+  --color-cream: #FAF7F0;
+  --color-charcoal: #2C2C2C;
+
+  /* Fonts */
+  --font-display: "Poppins", Georgia, serif;
+  --font-body: "Poppins", system-ui, sans-serif;
+  --font-sans: "Poppins", system-ui, sans-serif;
+
+  /* Shadows */
+  --shadow-luxury: 0 20px 60px rgba(0,0,0,0.15);
+  --shadow-luxury-hover: 0 30px 80px rgba(0,0,0,0.25);
+  --shadow-gold: 0 8px 30px rgba(201,162,39,0.35);
+
+  /* Breakpoints */
+  --breakpoint-xs: 480px;
+
+  /* Background images */
+  --background-image-gold-gradient: linear-gradient(135deg, #C9A227 0%, #E2B93B 50%, #A8841A 100%);
+  --background-image-dark-overlay: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+
+  /* Animations */
+  --animate-fade-up: fadeUp 0.6s ease-out forwards;
+  --animate-fade-in: fadeIn 0.8s ease-out forwards;
+  --animate-shimmer: shimmer 2s infinite;
+}
+
 :root {
-  --font-display: 'Poppins', system-ui, sans-serif;
-  --font-body: 'Poppins', system-ui, sans-serif;
   --gold: #C9A227;
   --gold-light: #E2B93B;
   --gold-dark: #A8841A;

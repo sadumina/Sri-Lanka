@@ -31,19 +31,9 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link href="/" className="flex flex-col leading-none group">
-            <span className="font-display text-xl font-bold text-white tracking-wider group-hover:text-[#C9A227] transition-colors duration-300">
-              CEYLON
-            </span>
-            <span className="font-body text-[10px] font-light text-[#C9A227] tracking-[0.3em] uppercase">
-              Luxury Travels
-            </span>
-          </Link>
-
-          {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
+        <div className="flex items-center h-20 bg-transparent rounded-md">
+          {/* Centered Nav */}
+          <nav className="flex-1 flex justify-center items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
@@ -55,39 +45,13 @@ export default function Navbar() {
               </Link>
             ))}
           </nav>
-
-          {/* CTA + Mobile Menu */}
-          <div className="flex items-center gap-4">
-            <Link
-              href="#newsletter"
-              className="hidden sm:inline-flex items-center btn-gold text-[10px] py-3 px-6"
-            >
-              Contact Us
-            </Link>
-
-            {/* Mobile hamburger */}
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="lg:hidden flex flex-col gap-[5px] p-2"
-              aria-label="Toggle menu"
-            >
-              <span
-                className={`block w-6 h-px bg-white transition-all duration-300 ${
-                  menuOpen ? "rotate-45 translate-y-[6px]" : ""
-                }`}
-              />
-              <span
-                className={`block w-6 h-px bg-white transition-all duration-300 ${
-                  menuOpen ? "opacity-0" : ""
-                }`}
-              />
-              <span
-                className={`block w-6 h-px bg-white transition-all duration-300 ${
-                  menuOpen ? "-rotate-45 -translate-y-[6px]" : ""
-                }`}
-              />
-            </button>
-          </div>
+          {/* Contact Us Button remains right-aligned */}
+          <Link
+            href="#newsletter"
+            className="btn-gold text-[10px] py-3 px-6"
+          >
+            Contact Us
+          </Link>
         </div>
 
         {/* Mobile Menu */}

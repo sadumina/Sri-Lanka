@@ -3,28 +3,9 @@ import Link from "next/link";
 
 export default function WhyChoose() {
   return (
-    <section id="why-choose" className="relative bg-[#EAEAEA] py-16 lg:py-24">
+    <section id="why-choose" className="relative bg-white py-16 lg:py-24">
       {/* Sri Lanka outline — large, behind the right text column */}
-      <div
-        className="hidden lg:block absolute pointer-events-none z-0"
-        style={{
-          top: "50%",
-          right: "2%",
-          transform: "translateY(-50%)",
-          width: 620,
-          height: 820,
-          opacity: 0.13,
-        }}
-      >
-        <Image
-          src="/sri-lanka-outline.png"
-          alt=""
-          fill
-          sizes="500px"
-          className="object-contain"
-        />
-      </div>
-
+      {/* Removed Sri Lanka outline image */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-[1.1fr_1fr] gap-10 lg:gap-8 items-start">
           {/* Left — Overlapping Image Cards */}
@@ -83,36 +64,31 @@ export default function WhyChoose() {
           {/* Right — Text Content */}
           <div className="flex flex-col justify-start lg:pt-0">
             {/* Eyebrow */}
-            <p className="font-body text-[13px] tracking-[0.1em] text-[#555] mb-3">
-              Why Choose{" "}
-              <span className="text-gold font-bold">The Ceylon Tour Guide</span>
-            </p>
-
-            {/* Heading */}
-            <h2 className="font-display text-[28px] sm:text-[36px] lg:text-[44px] font-black text-[#1A1A1A] uppercase leading-[1.05] tracking-tight mb-0">
-              Exclusive Journeys<br />
-              To The Remote<br />
-              Corners Of Sri Lanka
+            <h2 className="font-poppins font-semibold text-[32px] sm:text-[38px] lg:text-[44px] text-[#222] uppercase leading-tight mb-4">
+              WHY CHOOSE <br />
+              <span className="text-gold">TOUR GUIDE</span><br />
+              
             </h2>
 
+            {/* Heading */}
+            {/* Remove subheading for Figma match */}
+
             {/* Spacer to push body text down, aligning with bottom image */}
-            <div className="mt-auto lg:mt-16" />
+            <div className="mt-2" />
 
             {/* Body */}
-            <div className="space-y-4 mb-7">
-              <p className="font-body text-[13px] text-[#666] leading-[1.8] max-w-md">
-                We specialise in providing curious travellers with access to regions
-                and communities that would otherwise prove challenging.
+            <div className="space-y-3 mb-7">
+              <p className="font-poppins font-semibold text-[16px] text-[#444] leading-[1.7] max-w-lg">
+                Tour Guide independence allows us to remain fully dedicated to designing bespoke experiences that reflect the unique preferences of each client, free from the influence of external shareholders or corporate constraints.
               </p>
-              <p className="font-body text-[13px] text-[#666] leading-[1.8] max-w-md">
-                We are committed to offering unique travel opportunities, to unusual
-                destinations, that are mutually beneficial to all involved.
+              <p className="font-poppins font-semibold text-[16px] text-[#444] leading-[1.7] max-w-lg">
+                Our emphasis on personalization is complemented by long-standing relationships with trusted local partners. These enduring connections, built over decades, enable us to craft meaningful and insightful journeys that deeply resonate with our clients.
               </p>
             </div>
 
             {/* CTA */}
-            <Link href="#newsletter" className="btn-gold w-fit">
-              Contact Us
+            <Link href="#newsletter" className="bg-gold text-white font-poppins font-semibold px-7 py-3 rounded-xl shadow-md hover:bg-[#b89a1c] transition w-fit text-lg">
+              About Us
             </Link>
           </div>
         </div>
